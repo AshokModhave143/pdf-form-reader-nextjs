@@ -1,0 +1,9 @@
+{
+  "name": "pdf-form-reader-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pdf-form-reader-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["pdf-form-reader"],
+  "// targets": "to see all targets run: nx show project pdf-form-reader-e2e --web",
+  "targets": {}
+}
