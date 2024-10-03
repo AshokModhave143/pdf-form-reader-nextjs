@@ -11,12 +11,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
+    "moduleResolution": "Node",
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "types": ["jest", "node"]
+    "types": ["jest", "node"],
+    "paths": {
+      "@common/*": ["./src/app/_common/*"],
+      "@apps/*": ["./src/app/*"]
+    }
   },
   "include": [
     "**/*.ts",
@@ -25,7 +30,8 @@
     "**/*.jsx",
     "../../apps/pdf-form-reader/.next/types/**/*.ts",
     "../../dist/apps/pdf-form-reader/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }
