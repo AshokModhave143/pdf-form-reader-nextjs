@@ -1,0 +1,86 @@
+.pdf-reader {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.file-input {
+  margin-bottom: 1.5rem;
+}
+
+.compare-button {
+  display: block;
+  margin: 1.5rem auto;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.match-row {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.mismatch-row {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.summary {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.export-button {
+  display: block;
+  margin: 1.5rem auto;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #218838;
+  }
+}

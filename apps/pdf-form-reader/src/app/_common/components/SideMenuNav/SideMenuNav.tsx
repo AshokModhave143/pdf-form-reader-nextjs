@@ -1,6 +1,6 @@
 'use client';
 
-import { NavLink, Stack } from '@mantine/core';
+import { NavLink, Stack, Text } from '@mantine/core';
 
 import './SideMenuNav.style.scss';
 import { useState } from 'react';
@@ -20,27 +20,20 @@ export const SideMenuNav = ({ menuItems }: SideMenuNavProps) => {
   return (
     <Stack className="sideMenuNav">
       {menuItems?.map((item, index) => (
-        <Link
+        <NavLink
           key={`menuitem-${item.label}-${index}`}
           href={item.href ?? '/'}
+          active={index === active}
+          description={item.description}
+          leftSection={item.icon}
+          label={item.label}
+          onClick={() => handleOnMenuClick(index)}
+          color="cyan"
+          variant="filled"
+          component={Link}
           suppressHydrationWarning
           suppressContentEditableWarning
-          style={{
-            textDecorationLine: 'none',
-            textAnchor: 'middle',
-            color: 'cyan',
-          }}
-        >
-          <NavLink
-            active={index === active}
-            description={item.description}
-            leftSection={item.icon}
-            label={item.label}
-            onClick={() => handleOnMenuClick(index)}
-            color="cyan"
-            variant="filled"
-          />
-        </Link>
+        />
       ))}
     </Stack>
   );

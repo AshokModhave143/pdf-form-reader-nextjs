@@ -1,4 +1,4 @@
-import { Container, createTheme, MantineProvider, Stack } from '@mantine/core';
+import { Container, createTheme, MantineProvider } from '@mantine/core';
 import { Header } from '../Header';
 import './AppRoot.style.scss';
 import { SideMenuNav } from '../SideMenuNav';
