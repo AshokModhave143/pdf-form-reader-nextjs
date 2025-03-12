@@ -20,7 +20,10 @@
     "types": ["jest", "node"],
     "paths": {
       "@common/*": ["./src/app/_common/*"],
-      "@apps/*": ["./src/app/*"]
+      "@apps/*": ["./src/app/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@models/*": ["./src/models/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [

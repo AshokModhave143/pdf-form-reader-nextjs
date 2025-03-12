@@ -2,14 +2,12 @@ import { Container, FileInput, Button, Title, Box, Stack } from '@mantine/core';
 import ComparisonTable from './ComparisionTable'; // Import ComparisonTable component
 import './style.module.scss';
 import { usePdfReader } from './usePdfReader';
-import { RawDataDisplay } from './RawDataDisplay';
 
 const Home = () => {
   const {
     pdfFile,
     excelFile,
     comparisonResult,
-    mismatchCount,
     handlePdfUpload,
     handleExcelUpload,
     exportToExcel,
@@ -35,20 +33,20 @@ const Home = () => {
           accept="application/pdf"
           onChange={handlePdfUpload}
           className="file-input"
+          w={200}
         />
         <FileInput
           placeholder="Upload an Excel file"
           accept=".xlsx"
           onChange={handleExcelUpload}
           className="file-input"
+          w={200}
         />
 
         <Button onClick={compareData} className="compare-button">
           Compare Files
         </Button>
       </Stack>
-
-      {/* <RawDataDisplay pdfFile={pdfFile} excelFile={excelFile} /> */}
 
       {comparisonResult.length > 0 && (
         <ComparisonTable
